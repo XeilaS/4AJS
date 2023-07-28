@@ -4,6 +4,9 @@ import { Photo } from 'src/app/models/photoModels';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatDialog } from '@angular/material/dialog';
+import { ImageModalComponent } from '../image-modal/image-modal.component';
+
 
 @Component({
   selector: 'list-photo',
@@ -17,7 +20,7 @@ export class PhotoListComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private listPhotoService: ListPhotoServiceService) { }
+  constructor(private listPhotoService: ListPhotoServiceService,public dialog: MatDialog) { }
 
   ngAfterViewInit() {
     this.photos.paginator = this.paginator;
@@ -59,5 +62,12 @@ export class PhotoListComponent implements OnInit {
 
     this.photos.filter = 'triggerFilter';
     this.photos.paginator?.firstPage();
+  }
+
+  openImageDialog(imageUrl: string) {
+    this.dialog.open(ImageModalComponent, {
+      data: { imageUrl },
+      panelClass: 'custom-dialog-container'
+    });
   }
 }

@@ -39,7 +39,7 @@
 
       <ng-container matColumnDef="url">
         <th mat-header-cell *matHeaderCellDef> Image </th>
-        <td mat-cell *matCellDef="let element">
+        <td mat-cell *matCellDef="let element" (click)="openImageDialog(element.url)">
           <img [src]="element.url" alt="Image" width="50" height="50">
         </td>
       </ng-container>
