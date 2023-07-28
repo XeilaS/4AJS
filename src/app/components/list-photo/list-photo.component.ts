@@ -35,34 +35,28 @@ export class PhotoListComponent implements OnInit {
   titleFilter: string = '';
 
   applyFilter(event: Event, property: string) {
-    const filterValue = (event.target as HTMLInputElement).value;
-  
+    const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
+
     if (property === 'albumId') {
-      this.albumIdFilter = filterValue.trim().toLowerCase();
+      this.albumIdFilter = filterValue;
     } else if (property === 'id') {
-      this.idFilter = filterValue.trim().toLowerCase();
+      this.idFilter = filterValue;
     } else if (property === 'title') {
-      this.titleFilter = filterValue.trim().toLowerCase();
+      this.titleFilter = filterValue;
     }
-  
+
     this.filterTable();
   }
-  
+
   filterTable() {
-    this.photos.filterPredicate = (data: Photo, filter: string) => {
-      if (this.albumIdFilter && data.albumId.toString() === this.albumIdFilter) {
-        return true;
-      }
-      if (this.idFilter && data.id.toString() === this.idFilter) {
-        return true;
-      }
-      if (this.titleFilter && data.title.toLowerCase().includes(this.titleFilter)) {
-        return true;
-      }
-      return false;
+    this.photos.filterPredicate = (data: Photo) => {
+      const albumIdMatch = !this.albumIdFilter || data.albumId.toString() === this.albumIdFilter;
+      const idMatch = !this.idFilter || data.id.toString() === this.idFilter;
+      const titleMatch = !this.titleFilter || data.title.toLowerCase().includes(this.titleFilter);
+
+      return albumIdMatch && idMatch && titleMatch;
     };
-  
-    // Appliquer les filtres
+
     this.photos.filter = 'triggerFilter';
     this.photos.paginator?.firstPage();
   }
