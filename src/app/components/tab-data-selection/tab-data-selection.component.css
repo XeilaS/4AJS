@@ -1,0 +1,8 @@
+.mat-mdc-tab-header{
+    background-color: rgb(70, 70, 70);
+    max-width: 70%;
+    margin:auto;
+}
+.tabContainer {
+    margin-top: 75px;
+}

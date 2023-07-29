@@ -14,19 +14,23 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { ImageModalComponent } from './components/image-modal/image-modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { TabDataSelectionComponent } from './components/tab-data-selection/tab-data-selection.component';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PhotoListComponent,
-    ImageModalComponent
+    ImageModalComponent,
+    TabDataSelectionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatFormFieldModule, MatInputModule, MatTableModule, MatSortModule, MatPaginatorModule,MatDialogModule
+    MatFormFieldModule, MatInputModule, MatTableModule, MatSortModule, MatPaginatorModule,MatDialogModule ,MatTabsModule
   ],
   providers: [
     ListPhotoServiceService
