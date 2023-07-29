@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild} from '@angular/core';
-import { ListPhotoServiceService } from 'src/app/services/list-photo-service/list-photo-service.service';
+import { ListPhotoService } from 'src/app/services/list-photo-service/list-photo-service';
 import { Photo } from 'src/app/models/photoModels';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -20,7 +20,7 @@ export class PhotoListComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private listPhotoService: ListPhotoServiceService,public dialog: MatDialog) { }
+  constructor(private listPhotoService: ListPhotoService,public dialog: MatDialog) { }
 
   ngAfterViewInit() {
     this.photos.paginator = this.paginator;

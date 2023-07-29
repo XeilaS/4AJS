@@ -1,7 +1,19 @@
-<div class="tabContainer" >
-    <mat-tab-group class="mat-mdc-tab-header">
-      <mat-tab label="Liste des photos"><app-list-photo></app-list-photo></mat-tab>
-      <mat-tab label="Listes des Albums"> Content 2 </mat-tab>
-      <mat-tab label="Listes des utilisateurs"> Content 3 </mat-tab>
-    </mat-tab-group>
-  </div>
+<div class="tabContainer">
+  <mat-tab-group class="mat-mdc-tab-header" (selectedTabChange)="onTabChange($event)">
+    <mat-tab label="Liste des photos">
+      <ng-template matTabContent>
+        <app-list-photo></app-list-photo>
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="Listes des Albums">
+      <ng-template matTabContent>
+        <app-list-album></app-list-album>
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="Listes des utilisateurs">
+      <ng-template matTabContent>
+        Content 3
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+</div>

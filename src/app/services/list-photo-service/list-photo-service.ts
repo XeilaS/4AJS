@@ -6,7 +6,7 @@ import { Photo } from 'src/app/models/photoModels';
 @Injectable({
   providedIn: 'root'
 })
-export class ListPhotoServiceService {
+export class ListPhotoService {
   private apiUrl = 'https://jsonplaceholder.typicode.com/photos';
 
   constructor(private http: HttpClient) { }

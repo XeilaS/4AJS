@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PhotoListComponent } from './components/list-photo/list-photo.component';
-import { ListPhotoServiceService } from 'src/app/services/list-photo-service/list-photo-service.service';
+import { ListPhotoService } from 'src/app/services/list-photo-service/list-photo-service';
 import { MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -16,6 +16,7 @@ import { ImageModalComponent } from './components/image-modal/image-modal.compon
 import { MatDialogModule } from '@angular/material/dialog';
 import { TabDataSelectionComponent } from './components/tab-data-selection/tab-data-selection.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { ListAlbumComponent } from './components/list-album/list-album.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     AppComponent,
     PhotoListComponent,
     ImageModalComponent,
-    TabDataSelectionComponent
+    TabDataSelectionComponent,
+    ListAlbumComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatFormFieldModule, MatInputModule, MatTableModule, MatSortModule, MatPaginatorModule,MatDialogModule ,MatTabsModule
   ],
   providers: [
-    ListPhotoServiceService
+    ListPhotoService
   ],
   bootstrap: [AppComponent]
 })
