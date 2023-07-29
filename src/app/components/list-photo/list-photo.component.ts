@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild} from '@angular/core';
 import { ListPhotoServiceService } from 'src/app/services/list-photo-service/list-photo-service.service';
 import { Photo } from 'src/app/models/photoModels';
 import { MatPaginator } from '@angular/material/paginator';
@@ -9,7 +9,7 @@ import { ImageModalComponent } from '../image-modal/image-modal.component';
 
 
 @Component({
-  selector: 'list-photo',
+  selector: 'app-list-photo',
   templateUrl: './list-photo.component.html',
   styleUrls: ['./list-photo.component.css']
 })
@@ -33,9 +33,9 @@ export class PhotoListComponent implements OnInit {
     });
   }
 
-  albumIdFilter: string = '';
-  idFilter: string = '';
-  titleFilter: string = '';
+  albumIdFilter = '';
+  idFilter = '';
+  titleFilter = '';
 
   applyFilter(event: Event, property: string) {
     const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
