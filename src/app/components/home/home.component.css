@@ -1,0 +1,88 @@
+/* Réutilisation du code CSS précédent */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    /* Aligner le contenu en colonne */
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    padding: 20px 0;
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 65px;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+}
+
+main {
+    width: 60%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description-container {
+    margin-bottom: 30px;
+}
+
+.description-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description-container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.resource-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.resource-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.resource-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-container li {
+    margin-bottom: 10px;
+}
+
+/* Style pour les liens, vous pouvez ajouter plus de styles selon vos besoins */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
