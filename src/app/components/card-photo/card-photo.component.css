@@ -1,0 +1,73 @@
+.description-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 14px; 
+  margin-top: 45px;
+}
+.description-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description-container p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    
+  }
+  
+  .example-card {
+    width: 200px;
+    min-height: 335px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .card-image {
+    max-width: 100%;
+    max-height: 50%;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .card-content {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 35px;
+    overflow: hidden;
+  }
+  
+  .card-content mat-card-title,
+  .card-content mat-card-subtitle {
+    color: #333;
+  }
+  
+  .card-content mat-card-subtitle {
+    font-size: 16px;
+    margin-top: -10px;
+  }
+  
+  mat-paginator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }

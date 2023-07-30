@@ -1,4 +1,3 @@
-/* Importer la police Montserrat depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 .navbar {
@@ -11,7 +10,7 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  border-radius: 30px; /* Ajouter des bords arrondis */
+  border-radius: 30px;
 }
 
 .navbar li {
@@ -20,32 +19,29 @@
 
 .navbar li a {
   display: block;
-  font-family: "Montserrat", sans-serif; /* Changer la police en Montserrat sans serif */
-  font-weight: 600; /* Mettre le poids de la police en semi bold (600) */
-  color: rgb(202, 201, 201); /* Changer la couleur de la police en gris léger */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: rgb(202, 201, 201);
   text-align: center;
   padding: 16px 55px;
   background-color: rgb(85, 84, 84);
   text-decoration: none;
-  border-radius: 25px; /* Ajouter des formes arrondies pour les liens (boutons) */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Ajouter une transition fluide */
+  border-radius: 25px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .navbar li a:hover {
-  background-color: rgb(102, 89, 89); /* Couleur de fond légèrement grisée lors du survol */
+  background-color: rgb(102, 89, 89);
 }
 
-/* Ajouter un espace à gauche du premier lien */
 .navbar li:first-child {
   margin-left: 20px;
 }
 
-/* Ajouter un espace à droite du dernier lien */
 .navbar li:last-child {
   margin-right: 20px;
 }
 
-/* Ajouter un style au lien actif */
 .navbar li a:active {
-  border: 2px solid rgba(255, 0, 0, 0.3); /* Bordure rouge fade autour du lien actif */
+  border: 2px solid rgba(255, 0, 0, 0.3);
 }

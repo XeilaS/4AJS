@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,7 +20,9 @@ import { ListUserComponent } from './components/list-user/list-user.component';
 import { ListUserService } from './services/list-user-service/list-user.service';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
+import { CardPhotoComponent } from './components/card-photo/card-photo.component';
+import { MatButtonModule } from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -32,14 +33,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ListAlbumComponent,
     ListUserComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    CardPhotoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatFormFieldModule, MatInputModule, MatTableModule, MatSortModule, MatPaginatorModule,MatDialogModule ,MatTabsModule
+    MatFormFieldModule, MatInputModule, MatTableModule, MatSortModule, MatPaginatorModule,MatDialogModule ,MatTabsModule, MatButtonModule,MatCardModule
   ],
   providers: [
     ListPhotoService,
