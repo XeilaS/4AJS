@@ -17,6 +17,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { TabDataSelectionComponent } from './components/tab-data-selection/tab-data-selection.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ListAlbumComponent } from './components/list-album/list-album.component';
+import { ListUserComponent } from './components/list-user/list-user.component';
+import { ListUserService } from './services/list-user-service/list-user.service';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -25,7 +29,10 @@ import { ListAlbumComponent } from './components/list-album/list-album.component
     PhotoListComponent,
     ImageModalComponent,
     TabDataSelectionComponent,
-    ListAlbumComponent
+    ListAlbumComponent,
+    ListUserComponent,
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +42,8 @@ import { ListAlbumComponent } from './components/list-album/list-album.component
     MatFormFieldModule, MatInputModule, MatTableModule, MatSortModule, MatPaginatorModule,MatDialogModule ,MatTabsModule
   ],
   providers: [
-    ListPhotoService
+    ListPhotoService,
+    ListUserService
   ],
   bootstrap: [AppComponent]
 })
