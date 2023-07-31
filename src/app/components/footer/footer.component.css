@@ -1,23 +1,23 @@
 .footer-bottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
     background: #313131;
     padding: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #fff;
 }
 
 .footer-bottom p {
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
-    color: aliceblue;
+    display: inline-block; /* Pour aligner le texte au milieu */
 }
 
 .footer-bottom p a {
-    color: #ea75ee;
+    color: #44bae8;
     font-size: 16px;
     text-decoration: none;
 }
-

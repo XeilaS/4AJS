@@ -4,6 +4,7 @@
     flex-direction: column;
     margin-top: 10%;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .page-title {
@@ -23,12 +24,12 @@
 }
 
 .user-avatar {
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     background-color: #ccc;
     margin-right: 10px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/4537/4537019.png');
+    background-image: url('https://media.tenor.com/epNMHGvRyHcAAAAd/gigachad-chad.gif');
     background-size: cover;
     background-position: center;
 }
