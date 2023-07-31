@@ -71,3 +71,15 @@
     bottom: 20px;
     right: 20px;
   }
+
+  .filter {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 50px;
+  }
+  
+  .filter-field {
+    flex: 1;
+    margin-right: 10px; 
+  }
+  

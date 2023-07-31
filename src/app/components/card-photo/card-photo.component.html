@@ -3,6 +3,17 @@
     <p>
         Ceci est un affichage de type carte. <br>Vous pouvez cliquer sur les images pour les afficher en grand.
     </p>
+    <div class="filter">
+        <mat-form-field class="filter-field">
+            <mat-label>Filtrage sur ImageID</mat-label>
+            <input matInput (keyup)="applyFilter($event, 'id')" placeholder="Ex: 1 ou 2 ou 99" name="id">
+        </mat-form-field>
+    
+        <mat-form-field class="filter-field">
+            <mat-label>Filtrage sur Titre</mat-label>
+            <input matInput (keyup)="applyFilter($event, 'title')" placeholder="Ex: Abbeus Papam" name="title">
+        </mat-form-field>
+    </div>
 </div>
 
 <div class="photo-container">
@@ -10,8 +21,8 @@
         <img mat-card-image (click)="openImageDialog(photo.url)" [src]="photo.url" [alt]="photo.title"
             class="card-image">
         <mat-card-header class="card-content">
-            <mat-card-title>TITRE: {{ photo.title }}</mat-card-title>
             <mat-card-subtitle>ID: {{ photo.id }}</mat-card-subtitle>
+            <mat-card-title>TITRE: {{ photo.title }}</mat-card-title>
         </mat-card-header>
     </mat-card>
 </div>
