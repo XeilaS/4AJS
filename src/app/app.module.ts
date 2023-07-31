@@ -24,6 +24,8 @@ import { CardPhotoComponent } from './components/card-photo/card-photo.component
 import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
     HomeComponent,
     NavbarComponent,
     CardPhotoComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,

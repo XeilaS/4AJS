@@ -39,3 +39,15 @@ table {
 .backgroundList {
     background-color: azure;
 }
+
+.link-style {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.link-style:hover {
+    color: rgb(219, 87, 186);
+}

@@ -39,7 +39,7 @@
 
             <ng-container matColumnDef="detailUser">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Page de détails</th>
-                <td mat-cell *matCellDef=""> Voir plus > </td>
+                <td mat-cell *matCellDef="let row"> <a [routerLink]="['/user-details', row.id]" class="link-style">Voir plus </a>> </td>
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
