@@ -23,6 +23,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardPhotoComponent } from './components/card-photo/card-photo.component';
 import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { ErrorPageComponent } from './components/error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {MatCardModule} from '@angular/material/card';
     ListUserComponent,
     HomeComponent,
     NavbarComponent,
-    CardPhotoComponent
+    CardPhotoComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
