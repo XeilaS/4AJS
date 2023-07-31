@@ -1,0 +1,23 @@
+.footer-bottom {
+    background: #313131;
+    padding: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: aliceblue;
+}
+
+.footer-bottom p a {
+    color: #ea75ee;
+    font-size: 16px;
+    text-decoration: none;
+}
+

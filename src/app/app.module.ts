@@ -25,6 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { UserDetailsComponent } from './components/user-details/user-details.com
     NavbarComponent,
     CardPhotoComponent,
     ErrorPageComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
